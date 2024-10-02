@@ -1,9 +1,7 @@
 import Options from "./Options";
-import { useQuiz } from './QuizContext';
 
-function Question() {
-  // console.log(question)
-  const { question, dispatch, answer } = useQuiz();
+function Question({ question, dispatch, answer }) {
+    // console.log(question)
     return (
       <div>
         <h4>{question.question}</h4>
